@@ -27,7 +27,7 @@ public class CalculaTarifaTest {
 	Double tarifa = calculaTarifa.calcula(Cidade.PORTO_ALEGRE, 7.8);
 
 	String tarifaFormatada = new DecimalFormat("0.00").format(tarifa);
-	assertThat(tarifaFormatada, equalTo("22.15"));
+	assertThat(tarifaFormatada, equalTo("22,15"));
     }
 
     @Test
@@ -35,7 +35,7 @@ public class CalculaTarifaTest {
 	Double tarifa = calculaTarifa.calcula(Cidade.MANAUS, 7.8);
 
 	String tarifaFormatada = new DecimalFormat("0.00").format(tarifa);
-	assertThat(tarifaFormatada, equalTo("22.72"));
+	assertThat(tarifaFormatada, equalTo("22,72"));
     }
 
     @Test
@@ -44,7 +44,7 @@ public class CalculaTarifaTest {
 	Double tarifa = calculaTarifa.calculaBandeira2(Cidade.MANAUS, 7.8);
 
 	String tarifaFormatada = new DecimalFormat("0.00").format(tarifa);
-	assertThat(tarifaFormatada, equalTo("26.62"));
+	assertThat(tarifaFormatada, equalTo("26,62"));
     }
 
 }
