@@ -43,7 +43,7 @@ public class Funcionario extends Pessoa {
      */
 
     public float getSalario(float valorHora) {
-	return this.salario * valorHora;
+    	return this.salario * valorHora;
     }
 
     /**

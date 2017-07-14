@@ -8,84 +8,109 @@ import org.junit.Before;
 import org.junit.Test;
 
 /**
- * Classe de teste para o Modelo Agenda.
- * Exemplos de Utilizando Matchers.
+ * Classe de teste para o Modelo Agenda. Exemplos de Utilizando Matchers.
  * 
  * @author Gilberto Lupatini
  */
 public class AgendaTest {
 
-    Agenda agenda;
-    
-    Animal animalExemplo;
-    
-    @Before
-    public void setUp() throws Exception {
-	agenda = new Agenda();
-	animalExemplo = new Animal("Ruff", 30, 45, true, Especie.Mamíferos);
-    }
+	Agenda agenda;
 
-    @Test
-    public void testIncluiAgendaSeEhDiferenteDeNull() {
-	Consulta consultaInclusao = new Consulta(animalExemplo, new Date(), false, 70F);
-	agenda.incluiAgenda(consultaInclusao);
-	
-	//X notNullValue() tenta deixar mais semântico o teste
-	Assert.assertThat(agenda.getConsultas(), CoreMatchers.notNullValue());
-    }
+	Animal animalExemplo, animalExemplo1;
 
-    @Test
-    public void testIncluiAgendaSeEhOMesmoObjeto() {
-	Consulta consultaInclusao = new Consulta(animalExemplo, new Date(), false, 70F);
-	agenda.incluiAgenda(consultaInclusao);
-	
-	//X is(equalsTo( Y )) tenta deixar mais semântico o teste
-	Assert.assertThat(agenda.getConsultas().get(0), CoreMatchers.is(CoreMatchers.equalTo(consultaInclusao)));
-    }
+	@Before
+	public void setUp() throws Exception {
+		agenda = new Agenda();
+		animalExemplo = new Animal("Ruff", 30, 45, true, Especie.Mamíferos);
+		animalExemplo1 = new Animal("Draco", 30, 45, true, Especie.Mamíferos);
+	}
 
-    @Test
-    public void testIncluiAgendaSeEhOMesmoObjetoComIS() {
-	Consulta consultaInclusao = new Consulta(animalExemplo, new Date(), false, 70F);
-	agenda.incluiAgenda(consultaInclusao);
-	
-	//IS também faz comparações diretas
-	Assert.assertThat(agenda.getConsultas().get(0), CoreMatchers.is(consultaInclusao));
-    }
+	@Test
+	public void testIncluiAgendaSeEhDiferenteDeNull() {
+		Consulta consultaInclusao = new Consulta(animalExemplo, new Date(), false, 70F);
+		agenda.incluiAgenda(consultaInclusao);
 
-    @Test
-    public void testIncluiAgendaMultiplosTestesEmUm() {
-	Consulta consultaInclusao = new Consulta(animalExemplo, new Date(), false, 70F);
-	agenda.incluiAgenda(consultaInclusao);
-	
-	//com allOf podemos testar vários critérios ao mesmo tempo ( funciona como um AND)
-	Assert.assertThat(agenda.getConsultas().get(0), CoreMatchers.allOf(CoreMatchers.notNullValue(), CoreMatchers.is(consultaInclusao)));
-    }
+		// X notNullValue() tenta deixar mais semântico o teste
+		Assert.assertThat(agenda.getConsultas(), CoreMatchers.notNullValue());
+	}
 
-    @Test
-    @SuppressWarnings("unchecked")
-    public void testIncluiAgendaMultiplosQualquerUmValido() {
-	Consulta consultaInclusao = new Consulta(animalExemplo, new Date(), false, 70F);
-	agenda.incluiAgenda(consultaInclusao);
-	
-	//o anyOf é uma espécie de OR (neste caso nullValue é falso, mas o segundo critério é verdadeiro)
-	Assert.assertThat(agenda.getConsultas().get(0), CoreMatchers.anyOf(CoreMatchers.nullValue(), CoreMatchers.is(consultaInclusao)));
-    }
+	@Test
+	public void testIncluiAgendaSeEhOMesmoObjeto() {
+		Consulta consultaInclusao = new Consulta(animalExemplo, new Date(), false, 70F);
+		agenda.incluiAgenda(consultaInclusao);
 
-    @Test
-    @SuppressWarnings("unchecked")
-    public void testIncluiAgendaAninhados() {
-	Consulta consultaInclusao = new Consulta(animalExemplo, new Date(), false, 70F);
-	agenda.incluiAgenda(consultaInclusao);
+		// X is(equalsTo( Y )) tenta deixar mais semântico o teste
+		Assert.assertThat(agenda.getConsultas().get(0), CoreMatchers.is(CoreMatchers.equalTo(consultaInclusao)));
+	}
+
+	@Test
+	public void testIncluiAgendaSeEhOMesmoObjetoComIS() {
+		Consulta consultaInclusao = new Consulta(animalExemplo, new Date(), false, 70F);
+		agenda.incluiAgenda(consultaInclusao);
+
+		// IS também faz comparações diretas
+		Assert.assertThat(agenda.getConsultas().get(0), CoreMatchers.is(consultaInclusao));
+	}
+
+	@Test
+	public void testIncluiAgendaMultiplosTestesEmUm() {
+		Consulta consultaInclusao = new Consulta(animalExemplo, new Date(), false, 70F);
+		agenda.incluiAgenda(consultaInclusao);
+
+		// com allOf podemos testar vários critérios ao mesmo tempo ( funciona como um
+		// AND)
+		Assert.assertThat(agenda.getConsultas().get(0),
+				CoreMatchers.allOf(CoreMatchers.notNullValue(), CoreMatchers.is(consultaInclusao)));
+	}
+
+	@Test
+	@SuppressWarnings("unchecked")
+	public void testIncluiAgendaMultiplosQualquerUmValido() {
+		Consulta consultaInclusao = new Consulta(animalExemplo, new Date(), false, 70F);
+		Consulta consultaInclusao1 = new Consulta(animalExemplo, new Date(), false, 170F);
+		agenda.incluiAgenda(consultaInclusao);
+		agenda.incluiAgenda(consultaInclusao1);
+
+		// o anyOf é uma espécie de OR (neste caso nullValue é falso, mas o segundo
+		// critério é verdadeiro)
+		Assert.assertThat(agenda.getConsultas().get(0),
+				CoreMatchers.anyOf(CoreMatchers.nullValue(),
+						           CoreMatchers.is(consultaInclusao)));
+	}
+
+	@Test
+	@SuppressWarnings("unchecked")
+	public void testIncluiAgendaAninhados() {
+		Consulta consultaInclusao = new Consulta(animalExemplo, new Date(), false, 70F);
+		agenda.incluiAgenda(consultaInclusao);
+
+		// multiplos níveis são permitidos. Os Matchers foram projetados para serem
+		// usados assim.
+		Assert.assertThat(agenda.getConsultas().get(0).getAnimal().getEspecie(),
+				CoreMatchers.anyOf(CoreMatchers.is(CoreMatchers.nullValue()),
+						CoreMatchers.is(consultaInclusao.getAnimal().getEspecie()),
+						CoreMatchers.allOf(CoreMatchers.any(Especie.class), CoreMatchers.notNullValue(),
+								CoreMatchers.is(consultaInclusao.getAnimal().getEspecie()))));
+	}
 	
-	//multiplos níveis são permitidos. Os Matchers foram projetados para serem usados assim.
-	Assert.assertThat(agenda.getConsultas().get(0).getAnimal().getEspecie(),
-		CoreMatchers.anyOf(
-			CoreMatchers.is(CoreMatchers.nullValue()),
-			CoreMatchers.is(consultaInclusao.getAnimal().getEspecie()),
-			CoreMatchers.allOf(
-				CoreMatchers.any(Especie.class),
-				CoreMatchers.notNullValue(),
-				CoreMatchers.is(consultaInclusao.getAnimal().getEspecie()))));
-    }
+	
+	@Test
+	public void testConsultaAgendaPorApelido() {
+		
+		Consulta consultaInclusao = new Consulta(animalExemplo, new Date(), false, 70F);
+		Consulta consultaInclusao1 = new Consulta(animalExemplo1, new Date(), false, 70F);
+		
+		agenda.incluiAgenda(consultaInclusao);
+		agenda.incluiAgenda(consultaInclusao1);
+		
+		Consulta consultaRetornada = agenda.consultarPorApelido("Ruff");
+		
+		Assert.assertThat(agenda.getConsultas().get(0), 
+				   CoreMatchers.allOf(CoreMatchers.notNullValue(),
+				   					  CoreMatchers.is(consultaRetornada)));
+		
+		
+		
+	}
 
 }
