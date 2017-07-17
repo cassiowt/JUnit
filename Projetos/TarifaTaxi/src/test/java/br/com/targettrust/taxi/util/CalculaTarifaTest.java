@@ -15,36 +15,43 @@ import org.junit.Test;
  */
 public class CalculaTarifaTest {
 
-    CalculaTarifa calculaTarifa;
-    
-    @Before
-    public void setUp() throws Exception {
-	calculaTarifa = new CalculaTarifa();
-    }
+	CalculaTarifa calculaTarifa;
 
-    @Test
-    public void testCalculaTarifa() {
-	Double tarifa = calculaTarifa.calcula(Cidade.PORTO_ALEGRE, 7.8);
+	@Before
+	public void setUp() throws Exception {
+		calculaTarifa = new CalculaTarifa();
+	}
 
-	String tarifaFormatada = new DecimalFormat("0.00").format(tarifa);
-	assertThat(tarifaFormatada, equalTo("22,15"));
-    }
+	@Test
+	public void testCalculaTarifa() {
+		Double tarifa = calculaTarifa.calcula(Cidade.PORTO_ALEGRE, 7.8);
 
-    @Test
-    public void testCalculaTarifaManaus() {
-	Double tarifa = calculaTarifa.calcula(Cidade.MANAUS, 7.8);
+		String tarifaFormatada = new DecimalFormat("0.00").format(tarifa);
+		assertThat(tarifaFormatada, equalTo("22,15"));
+	}
+	@Test
+	public void testCalculaTarifa2Porto() {
+		Double tarifa = calculaTarifa.calcula(Cidade.PORTO_ALEGRE, 10);
+		
+		String tarifaFormatada = new DecimalFormat("0.00").format(tarifa);
+		assertThat(tarifaFormatada, equalTo("27,12"));
+	}
 
-	String tarifaFormatada = new DecimalFormat("0.00").format(tarifa);
-	assertThat(tarifaFormatada, equalTo("22,72"));
-    }
+	@Test
+	public void testCalculaTarifaManaus() {
+		Double tarifa = calculaTarifa.calcula(Cidade.MANAUS, 7.8);
 
-    @Test
-    public void testCalculaTarifaManausBandeira2() {
-	//    MANAUS(4.00, 2.40, 2.90);
-	Double tarifa = calculaTarifa.calculaBandeira2(Cidade.MANAUS, 7.8);
+		String tarifaFormatada = new DecimalFormat("0.00").format(tarifa);
+		assertThat(tarifaFormatada, equalTo("22,72"));
+	}
 
-	String tarifaFormatada = new DecimalFormat("0.00").format(tarifa);
-	assertThat(tarifaFormatada, equalTo("26,62"));
-    }
+	@Test
+	public void testCalculaTarifaManausBandeira2() {
+		// MANAUS(4.00, 2.40, 2.90);
+		Double tarifa = calculaTarifa.calculaBandeira2(Cidade.MANAUS, 7.8);
+
+		String tarifaFormatada = new DecimalFormat("0.00").format(tarifa);
+		assertThat(tarifaFormatada, equalTo("26,62"));
+	}
 
 }
