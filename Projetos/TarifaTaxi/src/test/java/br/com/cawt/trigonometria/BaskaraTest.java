@@ -26,24 +26,27 @@ public class BaskaraTest {
 	@Parameters(name="Teste nro {index}: Calculando a={0} b={1} c={2} x1={3} x2={4}")
     public static Collection<?> getCasosTeste() {
 	return Arrays.asList(new Object[][] { 
-		{  3, 4, 1, -3.0, 9.0 }, 
-		{ -1, 2, 2, -0.7320508075688772, -2.732050807568877 }, 
-		{  0, 0, 0, 0, 0},
+		{  3, 4, 1, -3.0, 9.0 , true }, 
+		{ -1, 2, 2, -0.7320508075688772, -2.732050807568877, true }, 
+		{  0, 0, 0, 0, 0, false},
 	  });
     }
 	
 	public int a, b, c;
 	public double x1, x2;
+	public boolean resultadoDelta;
 	
 	
 	
-	public BaskaraTest(int a, int b, int c, double x1, double x2) {
+	public BaskaraTest(int a, int b, int c, double x1, double x2, boolean resultadoDelta) {
 		super();
 		this.a = a;
 		this.b = b;
 		this.c = c;
 		this.x1 = x1;
 		this.x2 = x2;
+		this.resultadoDelta = resultadoDelta;
+				
 	}
 
 	@Before
@@ -55,7 +58,7 @@ public class BaskaraTest {
 	@Test
 	public void testDuasRaizesDiferentes(){
 		System.out.println(baskara.delta());
-		assertTrue("Não Existem duas raizes diferentes", baskara.delta() > 0);
+		assertTrue(resultadoDelta == baskara.delta() > 0);
 	}
 	
 	@Test
