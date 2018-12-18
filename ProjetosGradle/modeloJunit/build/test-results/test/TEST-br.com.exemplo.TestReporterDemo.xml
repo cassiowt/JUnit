@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="br.com.exemplo.TestReporterDemo" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-12-18T00:42:18" hostname="MacBook-Pro-de-AGES3.local" time="0.031">
+  <properties/>
+  <testcase name="reportSingleValue(TestReporter)" classname="br.com.exemplo.TestReporterDemo" time="0.028"/>
+  <testcase name="reportMultipleKeyValuePairs(TestReporter)" classname="br.com.exemplo.TestReporterDemo" time="0.0"/>
+  <testcase name="reportKeyValuePair(TestReporter)" classname="br.com.exemplo.TestReporterDemo" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

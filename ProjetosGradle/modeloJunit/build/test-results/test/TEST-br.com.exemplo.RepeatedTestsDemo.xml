@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="br.com.exemplo.RepeatedTestsDemo" tests="22" skipped="0" failures="0" errors="0" timestamp="2018-12-18T00:42:18" hostname="MacBook-Pro-de-AGES3.local" time="0.103">
+  <properties/>
+  <testcase name="repeatedTest()[1]" classname="br.com.exemplo.RepeatedTestsDemo" time="0.026"/>
+  <testcase name="repeatedTest()[2]" classname="br.com.exemplo.RepeatedTestsDemo" time="0.002"/>
+  <testcase name="repeatedTest()[3]" classname="br.com.exemplo.RepeatedTestsDemo" time="0.002"/>
+  <testcase name="repeatedTest()[4]" classname="br.com.exemplo.RepeatedTestsDemo" time="0.001"/>
+  <testcase name="repeatedTest()[5]" classname="br.com.exemplo.RepeatedTestsDemo" time="0.002"/>
+  <testcase name="repeatedTest()[6]" classname="br.com.exemplo.RepeatedTestsDemo" time="0.002"/>
+  <testcase name="repeatedTest()[7]" classname="br.com.exemplo.RepeatedTestsDemo" time="0.002"/>
+  <testcase name="repeatedTest()[8]" classname="br.com.exemplo.RepeatedTestsDemo" time="0.001"/>
+  <testcase name="repeatedTest()[9]" classname="br.com.exemplo.RepeatedTestsDemo" time="0.002"/>
+  <testcase name="repeatedTest()[10]" classname="br.com.exemplo.RepeatedTestsDemo" time="0.002"/>
+  <testcase name="repeatedTestInGerman()[1]" classname="br.com.exemplo.RepeatedTestsDemo" time="0.002"/>
+  <testcase name="repeatedTestInGerman()[2]" classname="br.com.exemplo.RepeatedTestsDemo" time="0.002"/>
+  <testcase name="repeatedTestInGerman()[3]" classname="br.com.exemplo.RepeatedTestsDemo" time="0.002"/>
+  <testcase name="repeatedTestInGerman()[4]" classname="br.com.exemplo.RepeatedTestsDemo" time="0.001"/>
+  <testcase name="repeatedTestInGerman()[5]" classname="br.com.exemplo.RepeatedTestsDemo" time="0.001"/>
+  <testcase name="repeatedTestWithRepetitionInfo(RepetitionInfo)[1]" classname="br.com.exemplo.RepeatedTestsDemo" time="0.005"/>
+  <testcase name="repeatedTestWithRepetitionInfo(RepetitionInfo)[2]" classname="br.com.exemplo.RepeatedTestsDemo" time="0.001"/>
+  <testcase name="repeatedTestWithRepetitionInfo(RepetitionInfo)[3]" classname="br.com.exemplo.RepeatedTestsDemo" time="0.001"/>
+  <testcase name="repeatedTestWithRepetitionInfo(RepetitionInfo)[4]" classname="br.com.exemplo.RepeatedTestsDemo" time="0.002"/>
+  <testcase name="repeatedTestWithRepetitionInfo(RepetitionInfo)[5]" classname="br.com.exemplo.RepeatedTestsDemo" time="0.001"/>
+  <testcase name="customDisplayNameWithLongPattern(TestInfo)[1]" classname="br.com.exemplo.RepeatedTestsDemo" time="0.003"/>
+  <testcase name="customDisplayName(TestInfo)[1]" classname="br.com.exemplo.RepeatedTestsDemo" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[dez 17, 2018 10:42:18 PM br.com.exemplo.RepeatedTestsDemo beforeEach
+INFORMAÇÕES: About to execute repetition 1 of 10 for repeatedTest
+dez 17, 2018 10:42:18 PM br.com.exemplo.RepeatedTestsDemo beforeEach
+INFORMAÇÕES: About to execute repetition 2 of 10 for repeatedTest
+dez 17, 2018 10:42:18 PM br.com.exemplo.RepeatedTestsDemo beforeEach
+INFORMAÇÕES: About to execute repetition 3 of 10 for repeatedTest
+dez 17, 2018 10:42:18 PM br.com.exemplo.RepeatedTestsDemo beforeEach
+INFORMAÇÕES: About to execute repetition 4 of 10 for repeatedTest
+dez 17, 2018 10:42:18 PM br.com.exemplo.RepeatedTestsDemo beforeEach
+INFORMAÇÕES: About to execute repetition 5 of 10 for repeatedTest
+dez 17, 2018 10:42:18 PM br.com.exemplo.RepeatedTestsDemo beforeEach
+INFORMAÇÕES: About to execute repetition 6 of 10 for repeatedTest
+dez 17, 2018 10:42:18 PM br.com.exemplo.RepeatedTestsDemo beforeEach
+INFORMAÇÕES: About to execute repetition 7 of 10 for repeatedTest
+dez 17, 2018 10:42:18 PM br.com.exemplo.RepeatedTestsDemo beforeEach
+INFORMAÇÕES: About to execute repetition 8 of 10 for repeatedTest
+dez 17, 2018 10:42:18 PM br.com.exemplo.RepeatedTestsDemo beforeEach
+INFORMAÇÕES: About to execute repetition 9 of 10 for repeatedTest
+dez 17, 2018 10:42:18 PM br.com.exemplo.RepeatedTestsDemo beforeEach
+INFORMAÇÕES: About to execute repetition 10 of 10 for repeatedTest
+dez 17, 2018 10:42:18 PM br.com.exemplo.RepeatedTestsDemo beforeEach
+INFORMAÇÕES: About to execute repetition 1 of 5 for repeatedTestInGerman
+dez 17, 2018 10:42:18 PM br.com.exemplo.RepeatedTestsDemo beforeEach
+INFORMAÇÕES: About to execute repetition 2 of 5 for repeatedTestInGerman
+dez 17, 2018 10:42:18 PM br.com.exemplo.RepeatedTestsDemo beforeEach
+INFORMAÇÕES: About to execute repetition 3 of 5 for repeatedTestInGerman
+dez 17, 2018 10:42:18 PM br.com.exemplo.RepeatedTestsDemo beforeEach
+INFORMAÇÕES: About to execute repetition 4 of 5 for repeatedTestInGerman
+dez 17, 2018 10:42:18 PM br.com.exemplo.RepeatedTestsDemo beforeEach
+INFORMAÇÕES: About to execute repetition 5 of 5 for repeatedTestInGerman
+dez 17, 2018 10:42:18 PM br.com.exemplo.RepeatedTestsDemo beforeEach
+INFORMAÇÕES: About to execute repetition 1 of 5 for repeatedTestWithRepetitionInfo
+dez 17, 2018 10:42:18 PM br.com.exemplo.RepeatedTestsDemo beforeEach
+INFORMAÇÕES: About to execute repetition 2 of 5 for repeatedTestWithRepetitionInfo
+dez 17, 2018 10:42:18 PM br.com.exemplo.RepeatedTestsDemo beforeEach
+INFORMAÇÕES: About to execute repetition 3 of 5 for repeatedTestWithRepetitionInfo
+dez 17, 2018 10:42:18 PM br.com.exemplo.RepeatedTestsDemo beforeEach
+INFORMAÇÕES: About to execute repetition 4 of 5 for repeatedTestWithRepetitionInfo
+dez 17, 2018 10:42:18 PM br.com.exemplo.RepeatedTestsDemo beforeEach
+INFORMAÇÕES: About to execute repetition 5 of 5 for repeatedTestWithRepetitionInfo
+dez 17, 2018 10:42:18 PM br.com.exemplo.RepeatedTestsDemo beforeEach
+INFORMAÇÕES: About to execute repetition 1 of 1 for customDisplayNameWithLongPattern
+dez 17, 2018 10:42:18 PM br.com.exemplo.RepeatedTestsDemo beforeEach
+INFORMAÇÕES: About to execute repetition 1 of 1 for customDisplayName
+]]></system-err>
+</testsuite>

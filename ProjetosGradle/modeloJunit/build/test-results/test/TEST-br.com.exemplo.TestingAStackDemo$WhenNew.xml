@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="br.com.exemplo.TestingAStackDemo$WhenNew" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-12-18T00:42:18" hostname="MacBook-Pro-de-AGES3.local" time="0.006">
+  <properties/>
+  <testcase name="throwsExceptionWhenPeeked()" classname="br.com.exemplo.TestingAStackDemo$WhenNew" time="0.002"/>
+  <testcase name="throwsExceptionWhenPopped()" classname="br.com.exemplo.TestingAStackDemo$WhenNew" time="0.001"/>
+  <testcase name="isEmpty()" classname="br.com.exemplo.TestingAStackDemo$WhenNew" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

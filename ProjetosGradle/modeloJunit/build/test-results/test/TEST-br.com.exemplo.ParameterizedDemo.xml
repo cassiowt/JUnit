@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="br.com.exemplo.ParameterizedDemo" tests="27" skipped="0" failures="0" errors="0" timestamp="2018-12-18T00:42:18" hostname="MacBook-Pro-de-AGES3.local" time="0.114">
+  <properties/>
+  <testcase name="testWithEnumSourceInclude(TimeUnit)[1]" classname="br.com.exemplo.ParameterizedDemo" time="0.017"/>
+  <testcase name="testWithEnumSourceInclude(TimeUnit)[2]" classname="br.com.exemplo.ParameterizedDemo" time="0.0"/>
+  <testcase name="testWithEnumSource(TimeUnit)[1]" classname="br.com.exemplo.ParameterizedDemo" time="0.001"/>
+  <testcase name="testWithEnumSource(TimeUnit)[2]" classname="br.com.exemplo.ParameterizedDemo" time="0.0"/>
+  <testcase name="testWithEnumSource(TimeUnit)[3]" classname="br.com.exemplo.ParameterizedDemo" time="0.0"/>
+  <testcase name="testWithEnumSource(TimeUnit)[4]" classname="br.com.exemplo.ParameterizedDemo" time="0.001"/>
+  <testcase name="testWithEnumSource(TimeUnit)[5]" classname="br.com.exemplo.ParameterizedDemo" time="0.0"/>
+  <testcase name="testWithEnumSource(TimeUnit)[6]" classname="br.com.exemplo.ParameterizedDemo" time="0.001"/>
+  <testcase name="testWithEnumSource(TimeUnit)[7]" classname="br.com.exemplo.ParameterizedDemo" time="0.001"/>
+  <testcase name="testWithMultiArgMethodSource(String, int, List)[1]" classname="br.com.exemplo.ParameterizedDemo" time="0.001"/>
+  <testcase name="testWithMultiArgMethodSource(String, int, List)[2]" classname="br.com.exemplo.ParameterizedDemo" time="0.001"/>
+  <testcase name="testWithEnumSourceRegex(TimeUnit)[1]" classname="br.com.exemplo.ParameterizedDemo" time="0.001"/>
+  <testcase name="testWithEnumSourceRegex(TimeUnit)[2]" classname="br.com.exemplo.ParameterizedDemo" time="0.0"/>
+  <testcase name="testWithEnumSourceRegex(TimeUnit)[3]" classname="br.com.exemplo.ParameterizedDemo" time="0.001"/>
+  <testcase name="testWithRangeMethodSource(int)[1]" classname="br.com.exemplo.ParameterizedDemo" time="0.001"/>
+  <testcase name="testWithRangeMethodSource(int)[2]" classname="br.com.exemplo.ParameterizedDemo" time="0.001"/>
+  <testcase name="testWithRangeMethodSource(int)[3]" classname="br.com.exemplo.ParameterizedDemo" time="0.001"/>
+  <testcase name="testWithRangeMethodSource(int)[4]" classname="br.com.exemplo.ParameterizedDemo" time="0.0"/>
+  <testcase name="testWithRangeMethodSource(int)[5]" classname="br.com.exemplo.ParameterizedDemo" time="0.0"/>
+  <testcase name="testWithRangeMethodSource(int)[6]" classname="br.com.exemplo.ParameterizedDemo" time="0.001"/>
+  <testcase name="testWithRangeMethodSource(int)[7]" classname="br.com.exemplo.ParameterizedDemo" time="0.0"/>
+  <testcase name="testWithRangeMethodSource(int)[8]" classname="br.com.exemplo.ParameterizedDemo" time="0.0"/>
+  <testcase name="testWithRangeMethodSource(int)[9]" classname="br.com.exemplo.ParameterizedDemo" time="0.0"/>
+  <testcase name="testWithRangeMethodSource(int)[10]" classname="br.com.exemplo.ParameterizedDemo" time="0.0"/>
+  <testcase name="palindromes(String)[1]" classname="br.com.exemplo.ParameterizedDemo" time="0.002"/>
+  <testcase name="palindromes(String)[2]" classname="br.com.exemplo.ParameterizedDemo" time="0.001"/>
+  <testcase name="palindromes(String)[3]" classname="br.com.exemplo.ParameterizedDemo" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
