@@ -1,16 +1,11 @@
 package br.com.exemplo;
 
-import br.com.exemplo.Palindrome;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import com.sun.org.apache.regexp.internal.REProgram;
+import org.junit.jupiter.api.*;
 
 import java.util.logging.Logger;
 
-import com.sun.org.apache.regexp.internal.REProgram;
-import org.junit.jupiter.api.*;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.ValueSource;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 
