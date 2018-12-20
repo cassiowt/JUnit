@@ -38,4 +38,16 @@ public class PersonBO {
         return person;
 
     }
+
+    public boolean deletePerson(int idPerson) {
+        boolean resultado = false;
+        Person person = null;
+        try {
+            person = (Person) personDAO.listPerson(idPerson);
+            resultado = personDAO.deletePerson(person.getIdPersona());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return resultado;
+    }
 }

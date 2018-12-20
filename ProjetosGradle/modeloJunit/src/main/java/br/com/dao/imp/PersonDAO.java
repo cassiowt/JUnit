@@ -7,6 +7,7 @@ public interface PersonDAO<Person> {
 
     public int addPerson(Person person);
     public Person listPerson(int idPerson);
-    public ArrayList<Person> AddPerson();
+    public ArrayList<Person> listAllPerson();
+    public boolean deletePerson(int idPerson);
 
 }

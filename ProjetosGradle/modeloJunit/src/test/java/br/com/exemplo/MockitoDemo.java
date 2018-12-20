@@ -25,7 +25,6 @@ class MockitoDemo {
     @Mock
     private PersonDAO personDAOMock;
 
-
     @BeforeEach
     public void upSet(){
        person = new Person(1, "Renato");
@@ -35,16 +34,21 @@ class MockitoDemo {
 
     @Test
     public void testAddPerson() {
-
         when(personDAOMock.addPerson(person)).thenReturn(1);
         assertTrue(personBO.addPerson(person) == 1);
     }
+
     @Test
-
-
-    public void testListerson() {
+    public void testListPerson() {
         when(personDAOMock.listPerson(1)).thenReturn(person);
         assertTrue(personBO.listPerson(1).getName().equals("Renato"));
+    }
+
+    @Test
+    public void testDeletePerson() {
+        when(personDAOMock.listPerson(1)).thenReturn(person);
+        when(personDAOMock.deletePerson(1)).thenReturn(true);
+        assertTrue(personBO.deletePerson(1) == true);
     }
 
 
