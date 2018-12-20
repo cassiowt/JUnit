@@ -3,6 +3,9 @@ package br.com.bo;
 import br.com.dao.imp.PersonDAO;
 import br.com.exemplo.Person;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class PersonBO {
 
     private PersonDAO personDAO;
@@ -49,5 +52,17 @@ public class PersonBO {
             e.printStackTrace();
         }
         return resultado;
+    }
+
+    public List<Person> listAllPerson() {
+        ArrayList<Person> persons = null;
+        try {
+            persons =  personDAO.listAllPerson();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return persons;
+
     }
 }
